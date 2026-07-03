@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Mi Página Freelancer</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Luis Cambronero - Desarrollador Web</h1>
+
+        <nav>
+            <a href="#sobre-mi">Sobre mí</a> |
+            <a href="#servicios">Servicios</a> |
+            <a href="#proyectos">Proyectos</a> |
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero similar a la referencia -->
+        <section class="hero" aria-label="Presentación">
+            <div class="photo" aria-label="Foto de Luis Cambronero">
+
+                <img src="imagenes/perfil.png" alt="Luis Cambronero">
+
+            </div>
+            <div class="bloque">
+                <span id="maquina" style="font-size:.92rem;color:#dfe6ff">Desarrollador Web Freelance</span>
+                    <h2 style="margin:6px 0 6px">Diseño y desarrollo de sitios web modernos y funcionales</h2>
+                    <p>Ayudo a empresarios y estudiantes a convertir ideas en sitios web profesionales y fáciles de
+                        usar.
+                    </p>
+                    <div class="cta">
+                        <a class="btn" href="#proyectos" aria-label="Ver proyectos">Ver proyectos</a>
+                        <a class="btn" href="#servicios" aria-label="Ver servicios"
+                            style="margin-left:8px">Servicios</a>
+                    </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Hola, mi nombre es Luis Cambronero y soy diceñador de sitios y paginas
+                con interés en el desarrollo web. Me gusta aprender nuevas
+                tecnologías y crear páginas web funcionales y fáciles de usar.
+            </p>
+
+            <p>
+                Actualmente estoy fortaleciendo mis conocimientos en HTML,
+                JavaScript y desarrollo de aplicaciones web.
+            </p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios que ofrezco</h2>
+
+            <div class="cards" aria-label="Servicios">
+                <div class="card">
+                    <h3>Diseño de páginas y sitios web</h3>
+                    <p>Maquetación, experiencia de usuario y responsive design.</p>
+                </div>
+                <div class="card">
+                    <h3>Diseño informativo</h3>
+                    <p>Contenido claro y accesible para usuarios finales.</p>
+                </div>
+                <div class="card">
+                    <h3>Mantenimiento y actualización</h3>
+                    <p>Actualización de contenidos, seguridad y rendimiento.</p>
+                </div>
+                <div class="card">
+                    <h3>Asesoría y proyectos</h3>
+                    <p>Guía básica en programación y proyectos académicos.</p>
+                </div>
+            </div>
+
+            <section aria-label="Servicios detallados" style="margin-top:14px;">
+                <ul>
+                    <li>Diseño de paginas y sitios web, desarrollo de aplicaciones .</li>
+                    <li>Diseño de sitios informativos.</li>
+                    <li>Mantenimiento y actualización de contenido.</li>
+                    <li>Desarrollo de proyectos académicos.</li>
+                    <li>Asesoría básica en programación.</li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades y Conocimientos</h2>
+
+            <p>
+                Durante mi formación como desarrollador web he adquirido conocimientos
+                en diversas áreas del desarrollo de software y aplicaciones web.
+            </p>
+
+            <ul>
+                <li>Fundamentos de Lógica y Programación.</li>
+                <li>HTML y CSS Estructural.</li>
+                <li>Maquetación y Diseño Adaptable.</li>
+                <li>JavaScript y jQuery para la Interacción.</li>
+                <li>Ajax y APIs.</li>
+                <li>Validaciones y Rendimiento.</li>
+                <li>Fundamentos de C#.</li>
+                <li>Introducción a ASP.NET y Arquitectura de Servicios.</li>
+                <li>Integración con APIs y operaciones CRUD.</li>
+                <li>Productividad con Inteligencia Artificial, Seguridad y Pruebas.</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Realizados</h2>
+
+            <ol>
+                <li>
+                    <a href="PRIMEREXAMEN.html" target="_blank ">
+                        Sistema de Registro de Estudiantes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="AREAYPERIMETRO.HTML" target="_blank ">
+                        Área y Perímetro del Círculo
+                    </a>
+                </li>
+
+                <li>
+                    <a href="entradaataberna.html" target="_blank ">
+                        Entrada a la Taberna
+                    </a>
+                </li>
+            </ol>
+
+            <p>
+                Estos son algunos de los proyectos que he desarrollado durante mi formación como programador.
+            </p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <p>
+                Correo electrónico:Luiscambro45@gmail.com
+                <a href="contacto.html" target="_blank"> <!-- Aqui cree un formulario con
+                     FormSubmit para que los mensajes lleguen a mi correo-->
+                    Contactarme
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="#">Mi perfil profesional</a>
+            </p>
+        </section>
+
+        <section id="formulario">
+
+            <h2>Formulario de Contacto</h2>
+
+            <p>
+                Puedes enviarme un mensaje y te responderé lo antes posible.
+            </p>
+
+            <form action="https://formsubmit.co/Luiscambro45@gmail.com" method="POST" class="formulario"
+                id="formulario-box">
+
+                <!-- Configuración de FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_template" value="table">
+
+                <input type="hidden" name="_autoresponse"
+                    value="Gracias por contactarme. He recibido tu mensaje y te responderé lo antes posible.">
+
+                <div class="row">
+
+                    <div class="col" style="min-width:240px">
+
+                        <input type="text" name="Nombre" placeholder="Nombre" aria-label="Nombre" required>
+
+                    </div>
+
+                    <div class="col" style="min-width:240px">
+
+                        <input type="email" name="Correo" placeholder="Correo" aria-label="Correo" required>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col" style="min-width:100%">
+
+                        <textarea class="textarea" name="Mensaje" placeholder="Mensaje" rows="4" aria-label="Mensaje"
+                            required></textarea>
+
+                    </div>
+
+                </div>
+
+                <button class="submit" type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Luis Cambronero - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
