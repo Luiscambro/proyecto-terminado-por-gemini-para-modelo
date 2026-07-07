@@ -1,26 +1,38 @@
-const texto = "Desarrollador Web Freelancer";
+const texto = "Desarrollador Web Freelance";
+
 const maquina = document.getElementById("maquina");
 
-let posicion = 0;
+let i = 0;
+let borrando = false;
 
 function escribir() {
-    if (posicion < texto.length) {
-        maquina.textContent += texto.charAt(posicion);
-        posicion++;
-        setTimeout(escribir, 80);
-    } else {
-        setTimeout(borrar, 1000); // espera 1 segundo y borra
-    }
-}
 
-function borrar() {
-    if (maquina.textContent.length > 0) {
-        maquina.textContent = maquina.textContent.slice(0, -1);
-        setTimeout(borrar, 50);
+    if (!borrando) {
+
+        
+        maquina.textContent = texto.substring(0, i + 1);
+        i++;
+
+        // Cuando termina de escribir
+        if (i === texto.length) {
+            borrando = true;
+            setTimeout(escribir, 1500); // espera antes de borrar
+            return;
+        }
+
     } else {
-        posicion = 0;          // reinicia contador
-        setTimeout(escribir, 500); // vuelve a escribir
+
+        // Borrar letra por letra
+        maquina.textContent = texto.substring(0, i - 1);
+        i--;
+
+        // Cuando queda vacío vuelve a escribir
+        if (i === 0) {
+            borrando = false;
+        }
     }
+
+    setTimeout(escribir, 100);
 }
 
 escribir();

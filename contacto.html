@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Luis Cambronero</title>
+
+    <link rel="stylesheet" href="Css/contacto.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Luis Cambronero - Desarrollador Web</h1>
+
+        <nav>
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#sobre-mi">Sobre mí</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="index.html#habilidades">Habilidades</a>
+            <a href="index.html#proyectos">Proyectos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="contacto">
+
+            <h2>Contacto:</h2>
+
+            <div class="contenedor-contacto">
+
+                <div class="contacto-item">
+
+                    <span class="icono">📧</span>
+
+                    <p>
+                        <strong>Correo electrónico:</strong>
+                        <a href="mailto:Luiscambro45@gmail.com">
+                            Luiscambro45@gmail.com
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <div class="contacto-item">
+
+                    <span class="icono">🔗</span>
+
+                    <p>
+                        <strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank">
+                            Mi perfil
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="formulario">
+
+            <h2>Formulario de Contacto:</h2>
+
+            <p>
+                Envíame un mensaje y te responderé lo antes posible.
+            </p>
+
+
+            <form action="https://formsubmit.co/Luiscambro45@gmail.com" 
+                  method="POST" 
+                  class="formulario"
+                  id="formulario-box">
+
+
+                <!-- Configuración de FormSubmit -->
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_template" value="table">
+
+                <input type="hidden" 
+                       name="_autoresponse"
+                       value="Gracias por contactarme. He recibido tu mensaje y te responderé lo antes posible.">
+
+
+                <div class="row">
+
+
+                    <div class="col">
+
+                        <input type="text" 
+                               name="Nombre" 
+                               placeholder="Nombre"
+                               aria-label="Nombre"
+                               required>
+
+
+                        <input type="text" 
+                               name="Apellido"
+                               placeholder="Primer Apellido"
+                               aria-label="Apellido"
+                               required>
+
+
+                        <input type="text"
+                               name="Segundo Apellido"
+                               placeholder="Segundo Apellido"
+                               aria-label="Segundo Apellido"
+                               required>
+
+                    </div>
+
+
+
+                    <div class="col">
+
+                        <input type="email"
+                               name="Correo"
+                               placeholder="Correo electrónico"
+                               aria-label="Correo"
+                               required>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <textarea class="textarea"
+                                  name="Mensaje"
+                                  placeholder="Mensaje"
+                                  rows="4"
+                                  aria-label="Mensaje"
+                                  required></textarea>
+
+                    </div>
+
+                </div>
+
+
+
+                <button class="submit" type="submit">
+                    Enviar
+                </button>
+
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Luis Cambronero - Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+:root {
+    --bg: #0b1020;
+    --card: #141a31;
+    --text: #e6e9f5;
+    --muted: #a5ace3;
+    --accent: #6e8dff;
+}
+
+.col {
+    flex: 1;
+    min-width: 240px;
+}
+
+.col:last-child {
+    min-width: 100%;
+}
+
+
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family: Inter, system-ui, -apple-system, Arial, sans-serif;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    padding: 18px 25px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+
+    background: rgba(9, 12, 28, .9);
+
+}
+
+
+header h1 {
+
+    margin: 0;
+
+    font-size: 1.25rem;
+
+}
+
+
+nav a {
+
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    margin-right: 15px;
+
+}
+
+
+nav a:hover {
+
+    color: white;
+
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+main {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 40px 20px;
+
+}
+
+
+/* =========================
+   TITULO CONTACTO
+========================= */
+
+#formulario h2 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+#formulario p {
+
+    text-align: center;
+
+    margin: 0 auto 30px;
+
+    max-width: 700px;
+
+}
+
+/* =========================
+   DATOS DE CONTACTO
+========================= */
+#contacto h2,
+#formulario h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #e6e9f5;
+}
+
+.contenedor-contacto {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin-bottom: 40px;
+
+}
+
+
+.contacto-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.icono {
+
+    font-size: 25px;
+
+}
+
+
+.contacto-item p {
+
+    margin: 0;
+
+}
+
+
+.contacto-item strong {
+
+    color: #e6e9f5;
+
+}
+
+
+.contacto-item a {
+
+    color: #6e8dff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+.contacto-item a:hover {
+
+    color: white;
+
+    text-shadow: 0 0 8px #6e8dff;
+
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+#formulario .formulario {
+
+    text-align: center;
+
+    font-size: 2rem;
+
+    margin-bottom: 30px;
+
+    background: #1f2540;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+}
+
+
+input,
+.textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    border: 1px solid #334155;
+
+    background: #0b1020;
+
+    color: white;
+
+    margin: 10px 0;
+
+}
+
+
+.row {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.col {
+
+    flex: 1;
+
+}
+
+
+/* =========================
+   BOTÓN ENVIAR
+========================= */
+
+.submit {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #5b6cff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.submit:hover {
+
+    box-shadow:
+
+        0 0 10px #6e8dff,
+
+        0 0 25px #6e8dff,
+
+        0 0 40px #6e8dff;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px;
+
+    color: #a3a8d1;
+
+    border-top: 1px solid rgba(255, 255, 255, .08);
+
+    margin-top: 80px;
+
+}
