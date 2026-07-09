@@ -1,4 +1,4 @@
-const texto = "Desarrollador Web Freelance";
+const texto = "Desarrollador Web";
 
 const maquina = document.getElementById("maquina");
 

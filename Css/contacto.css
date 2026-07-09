@@ -43,13 +43,12 @@ body {
 ========================= */
 
 header {
-
-    padding: 18px 25px;
-
-    border-bottom: 1px solid rgba(255, 255, 255, .08);
-
+    padding: 14px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     background: rgba(9, 12, 28, .9);
-
+    backdrop-filter: blur(8px);
 }
 
 
@@ -122,6 +121,8 @@ main {
    DATOS DE CONTACTO
 ========================= */
 #contacto h2,
+
+
 #formulario h2 {
     text-align: center;
     font-size: 2rem;
@@ -312,15 +313,37 @@ input,
 ========================= */
 
 footer {
-
     text-align: center;
-
-    padding: 40px;
-
+    padding: 30px 16px;
     color: #a3a8d1;
+    margin-top: 50px;
+}
 
-    border-top: 1px solid rgba(255, 255, 255, .08);
+/* ==========================
+   ESPACIADO ENTRE SECCIONES
+========================== */
 
-    margin-top: 80px;
+section {
+    margin: 60px 0;
+    padding: 0 4px;
+}
 
+/* Más separación entre los párrafos */
+
+section p,
+section ul,
+section ol {
+    line-height: 1.8;
+}
+
+/* Animación suave al pasar el mouse */
+
+.card,
+.photo,
+.bloque {
+    transition: all .35s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
 }

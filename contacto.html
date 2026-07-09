@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contacto de Luis Cambronero, desarrollador web freelance.">
 
     <title>Contacto | Luis Cambronero</title>
 
-    <link rel="stylesheet" href="Css/contacto.css">
+
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 
 <body>
@@ -38,6 +39,30 @@
 
                 <div class="contacto-item">
 
+                    <span class="icono">📞</span>
+
+                    <p>
+                        <strong>Teléfono:</strong>
+                        <a href="tel:+50670326961">
+                            +506 7032-6961
+                        </a>
+                    </p>
+
+                    <span class="icono">💬</span>
+
+                    <p>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/50670326961?text=Hola%20Luis,%20vi%20tu%20portafolio%20y%20me%20gustaría%20más%20información."
+                            target="_blank" rel="noopener noreferrer">
+                            +506 7032-6961
+                        </a>
+                    </p>
+
+
+                </div>
+
+                <div class="contacto-item">
+
                     <span class="icono">📧</span>
 
                     <p>
@@ -56,7 +81,7 @@
 
                     <p>
                         <strong>LinkedIn:</strong>
-                        <a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank">
+                        <a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener noreferrer">
                             Mi perfil
                         </a>
                     </p>
@@ -78,10 +103,8 @@
             </p>
 
 
-            <form action="https://formsubmit.co/Luiscambro45@gmail.com" 
-                  method="POST" 
-                  class="formulario"
-                  id="formulario-box">
+            <form name="contacto" action="https://formsubmit.co/Luiscambro45@gmail.com" method="POST" class="formulario"
+                id="formulario-box">
 
 
                 <!-- Configuración de FormSubmit -->
@@ -90,9 +113,8 @@
 
                 <input type="hidden" name="_template" value="table">
 
-                <input type="hidden" 
-                       name="_autoresponse"
-                       value="Gracias por contactarme. He recibido tu mensaje y te responderé lo antes posible.">
+                <input type="hidden" name="_autoresponse"
+                    value="Gracias por contactarme. He recibido tu mensaje y te responderé lo antes posible.">
 
 
                 <div class="row">
@@ -100,37 +122,31 @@
 
                     <div class="col">
 
-                        <input type="text" 
-                               name="Nombre" 
-                               placeholder="Nombre"
-                               aria-label="Nombre"
-                               required>
+                        <input type="text" name="Nombre" placeholder="Nombre" autocomplete="given-name" required>
 
+                    </div>
 
-                        <input type="text" 
-                               name="Apellido"
-                               placeholder="Primer Apellido"
-                               aria-label="Apellido"
-                               required>
+                    <div class="col">
 
+                        <input type="text" name="Apellido" placeholder="Primer Apellido" autocomplete="family-name"
+                            required>
 
-                        <input type="text"
-                               name="Segundo Apellido"
-                               placeholder="Segundo Apellido"
-                               aria-label="Segundo Apellido"
-                               required>
+                    </div>
+
+                    <div class="col">
+
+                        <input type="text" name="Segundo Apellido" placeholder="Segundo Apellido"
+                            autocomplete="family-name" required>
 
                     </div>
 
 
 
+
+
                     <div class="col">
 
-                        <input type="email"
-                               name="Correo"
-                               placeholder="Correo electrónico"
-                               aria-label="Correo"
-                               required>
+                        <input type="email" name="Correo" placeholder="Correo electrónico" aria-label="Correo" required>
 
                     </div>
 
@@ -143,12 +159,8 @@
 
                     <div class="col">
 
-                        <textarea class="textarea"
-                                  name="Mensaje"
-                                  placeholder="Mensaje"
-                                  rows="4"
-                                  aria-label="Mensaje"
-                                  required></textarea>
+                        <textarea class="textarea" name="Mensaje" placeholder="Mensaje" rows="4" aria-label="Mensaje"
+                            required></textarea>
 
                     </div>
 
@@ -156,7 +168,7 @@
 
 
 
-                <button class="submit" type="submit">
+                <button type="submit" class="submit" aria-label="Enviar formulario">
                     Enviar
                 </button>
 
